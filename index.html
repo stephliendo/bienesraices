@@ -10,17 +10,64 @@
     <title>BienesRaices</title>
 </head>
 <body>
+<header>
+    <div class="barra bg-success">
+        <!-- contenerdor que me va a abarcar todo el nav -->
+    <div class="container">
+    <!-- Aqui comienza el navbar -->
+   <nav class="navbar bg-transparent navbar-dark navbar-expand-lg">
+    <!-- se usa la clase brand para resaltar la marca de la empresa -->
+    <a href="#" class="navbar-brand">RealState<span>GDL</span></a>
+       <!-- tipo de menu para dispositivos moviles // el collapse me hace un efecto acordeon y el data-target es el disparador -->
+    <button type="button" class="navbar-toggler" data-toggle="collapse"  data-target="#menuPrincipal" arial-controls="menuPrincipal" arial-expanded="false" arial-label="Mostrar Navegación">
+        <!-- esta clase:es el que coloca el icono -->
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+       <!-- colocamos el menu -->
+       <!-- creamos el div primero -->
+       <div class="collapse navbar-collapse" id="menuPrincipal">
+           <ul class="navbar-nav w-100 justify-content-end">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+                   <a href="#" class="nav-link">Nosotros</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="anuncionsDropdown" data-toggle="dropdown" aria-haspopup="true" arial-expans="false">Anuncios</a>
+                <div class="dropdown-menu" aria-labelledby="anunciosDropdown">
+                    <a href="#" class="dropdown-item">Casa 1</a>
+                    <a href="#" class="dropdown-item">Casa 2</a>
+                    <a href="#" class="dropdown-item">Casa 3</a>
+                </div>
+            </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contactos</a>
+              </li>
+
+           </ul>
+       </div>
+
+   </nav>
+    </div>
+</div> 
+</header>
+    <!-- Aqui comienza el carousel -->
     <div id="slider" class="carousel slide" data-ride="carousel" data-interval="5000">
         <!-- colocamos las imagenes -->
         <!-- El carousel inner abarca todas las imagenes  -->
     <div class="carousel-inner">
-        <!-- primera imagen -->
+ <!-- primera imagen -->
         <div class="carousel-item active">
-             <img src="img/slide1.jpg" alt="anuncio uno" class="d-block w-100">
+            <img src="img/slide1.jpg" alt="anuncio uno" class="d-block w-100">
         <!-- siempre que queramos trabajar con la grilla de bootstap coolocamos contenedor -->
         <div class="container">
-                     <!-- el between me agarra dos columnas, lo justifica hacia las esquinas -->
-          <div class="row justify-content-between">
+<!-- el between me agarra dos columnas, lo justifica hacia las esquinas -->
+            <div class="row justify-content-between">
             <div class="col-md-6">
 
                 <!-- Sin la clase de carousel-caption, apareceria el texto debajo de la imagen. Esta clase permite que aparezca el caption sobre la imagen -->
@@ -40,7 +87,7 @@
                 </a>
                 </div>
             </div>
-         </div>
+        </div>
 </div>
 
         </div>

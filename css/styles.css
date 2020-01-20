@@ -1,7 +1,27 @@
+/* las variables de CSS son entidades definidas por autores de CSS que contienen valores especificos
+*/
+
 :root {
     --primario: #71b100;
     --secundario: #e08709;
 }
 body {
     font-family: 'Lato', sans-serif;
+}
+
+.bg-success{
+    background-color: var(--primario)!important;
+}
+
+/* media qry va a especificar atributos especificos de acuerdo al tamanho
+*/
+@media (min-width: 768px) {
+    .barra.bg-success{
+        background-color: transparent!important;
+    }
+    .header .barra {
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+    }
 }
